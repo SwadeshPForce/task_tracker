@@ -8,7 +8,8 @@ import { IAddTask, ITask } from '../interface/task.interface';
 export class TaskService {
   constructor(private http: HttpClient) { }
 
-  baseUrl=`http://localhost:3000/tasks`
+  baseUrl=`https://task-tracker-backend-z54t.onrender.com/tasks`
+  // baseUrl=`http://localhost:3000/tasks`
   
   getAllTask() { 
     return this.http.get<ITask[]>(this.baseUrl); 
