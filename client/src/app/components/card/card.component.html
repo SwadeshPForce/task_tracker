@@ -1,9 +1,9 @@
-
-<div class="w-full min-h-40 bg-purple-50 rounded-md  shadow-md shadow-purple-50 border border-purple-100 p-4 flex flex-col gap-2 text-sm font-medium text-neutral-600 relative pb-12">
-<h1 class="text-purple-700 font-semibold text-lg">This is the title</h1>
-<p>This is the description</p>
-<div class="absolute bottom-4 right-4 flex items-center gap-4">
-    <button class="cursor-pointer text-green-600">Edit</button>
-    <button class="cursor-pointer text-red-400">Delete</button>
-</div>
+<div
+    class="w-full min-h-40 bg-purple-50 rounded-md  shadow-md shadow-purple-50 border border-purple-100 p-4 flex flex-col gap-2 text-sm font-medium text-neutral-600 relative pb-12">
+    <h1 class="text-purple-700 font-semibold text-lg">{{details.title}}</h1>
+    <p>{{details.description}}</p>
+    <div class="absolute bottom-4 right-4 flex items-center gap-4">
+        <button (click)="editTask(details)" class="cursor-pointer text-green-600">Edit</button>
+        <button (click)="deleteTask(details._id)" class="cursor-pointer text-red-400">Delete</button>
+    </div>
 </div>
